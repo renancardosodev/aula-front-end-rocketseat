@@ -197,4 +197,14 @@ p a{
     color: var(--text-color);
 }
 
+/* -------------- MEDIA QUERIES -------------- */
 
+@media (min-width: 700px){
+    :root{
+        --background: url(../assets/bg-desktop-dark\ \(1920x1080\).jpg);
+    }
+
+    .light{
+        --background: url(../assets/bg-desktop-light\ \(1920x1080\).jpg);
+    }
+}
