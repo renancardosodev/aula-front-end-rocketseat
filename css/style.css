@@ -103,12 +103,18 @@ main{
     z-index: 1;
 
     top: 50%;
+    animation: slide-dark 0.2s;
     
     translate: 0 -50%;   
 }
 
 .light #light-dark button{
     right: 0;
+    animation: slide-light 0.2s;
+}
+
+#light-dark button:hover{
+    outline: 8px solid var(--buttons-color-hover);
 }
 
 #light-dark div{
@@ -206,5 +212,25 @@ p a{
 
     .light{
         --background: url(../assets/bg-desktop-light\ \(1920x1080\).jpg);
+    }
+}
+
+/* -------------- ANIMACAO -------------- */
+
+@keyframes slide-light {
+    from{
+        right:50%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes slide-dark {
+    from{
+        right:0;
+    }
+    to{
+        right: 50%;
     }
 }
